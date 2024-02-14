@@ -1,0 +1,55 @@
+body {
+    background: #cfe8e0;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.container {
+    display: inline-block;
+    width: fit-content;
+    opacity: 0;
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+.typed-out {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1s steps(40, end) forwards, fadeIn 1s forwards;
+    font-size: 1.6rem;
+    width: 0;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+.btn-outline-success {
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards, fadeIn 1s forwards;
+    border: 2px solid #00575e; /* Dark teal border */
+    color: #00575e; /* Dark teal text color */
+    background-color: transparent;
+    transition: background-color 0.7s ease, color 0.7s ease;
+
+    &:hover {
+        background-color: #00575e; /* Dark teal background on hover */
+        color: #fff;
+    }
+}
+
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Adjust the distance from the bottom */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

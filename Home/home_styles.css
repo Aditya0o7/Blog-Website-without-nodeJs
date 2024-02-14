@@ -1,0 +1,25 @@
+
+
+.btn-outline{
+    margin-left: -6px;
+    transition: all 0.2s;
+    border-color: white;
+    text-decoration: underline;
+}
+.btn-outline:hover{
+    scale: 1.1;
+    background-color: rgb(255, 103, 103);
+    color: white;
+    border-color: aliceblue; 
+}
+
+.heading{
+    color: rgb(111, 109, 109);
+    font-family: cursive;
+    transition: all 0.5s;
+}
+
+.heading:hover{
+    scale: 1.1;
+    color: rgb(0, 0, 0);
+}
